@@ -1,0 +1,230 @@
+html  {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+body {
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header */
+
+header  {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background-color: cadetblue;
+  color: white;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+nav ul {
+  margin-right: 1rem;
+}
+
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+.truncated-menu {
+  display: none;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.main-banner {
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  h1 {
+      font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  header .truncated-menu {
+    display: block;
+  }
+
+  .main-banner {
+    padding: 0.5rem 0;
+    width: 100%;
+    margin: 9rem 0 0 0;
+    text-align: center;
+  }
+}
+/* Services */
+
+.support {
+  height: 8rem;
+
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img.paper {
+  width: 3.5rem;
+}
+
+@media only screen and (max-width: 580px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    margin: 7.54rem;
+  }
+
+  .service {
+    font-size: 0.77rem;
+    padding: 1.54rem;
+  }
+}
+
+/* Information */
+
+.address {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+
+.business-info {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-right: 15%;
+}
+
+.info .title {
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  max-width: 10rem;
+}
+
+@media only screen and (max-width: 580px) {
+  .address {
+    margin-top: 15rem;
+  }
+
+  .business-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+footer img  {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
